@@ -1,5 +1,5 @@
 import { readFile, writeFile, rename } from 'node:fs/promises';
-import { cacheCovers } from '../lib/cache-covers';
+import { cacheCovers } from '../lib/cache-covers.js';
 import type { Catalog } from '../lib/types';
 const catalog = JSON.parse(await readFile('src/data/catalog.json', 'utf8')) as Catalog;
 await cacheCovers(catalog);

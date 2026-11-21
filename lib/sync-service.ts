@@ -1,6 +1,6 @@
 import { randomUUID } from 'node:crypto';
-import { syncCatalog } from './catalog';
-import { CatalogConflict, createCatalogStore } from './catalog-store';
+import { syncCatalog } from './catalog.js';
+import { CatalogConflict, createCatalogStore } from './catalog-store.js';
 import type { CatalogStore } from './catalog-store';
 import type { Catalog } from './types';
 

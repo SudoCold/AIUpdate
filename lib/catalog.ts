@@ -1,5 +1,5 @@
-import { classify, cleanText, deduplicate, isAIRecord, parseArchiveDetail, parseArchiveSearch } from './metadata';
-import { mergeCatalog } from './merge-catalog';
+import { classify, cleanText, deduplicate, isAIRecord, parseArchiveDetail, parseArchiveSearch } from './metadata.js';
+import { mergeCatalog } from './merge-catalog.js';
 import type { Book, Catalog } from './types';
 
 const QUERIES = ['Artificial Intelligence', 'AI', 'Artificial-Intelligence'];

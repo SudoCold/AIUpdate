@@ -1,7 +1,7 @@
 import { timingSafeEqual } from 'node:crypto';
 import { Hono } from 'hono';
-import { catalogService, SyncBusy, SyncCooldown } from './sync-service';
-import { hasBlobStorage } from './catalog-store';
+import { catalogService, SyncBusy, SyncCooldown } from './sync-service.js';
+import { hasBlobStorage } from './catalog-store.js';
 import type { Catalog, CatalogPage } from './types';
 
 const automation = () => ({ enabled: !process.env.VERCEL || (hasBlobStorage() && Boolean(process.env.CRON_SECRET)),

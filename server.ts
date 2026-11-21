@@ -1,8 +1,8 @@
 import { Hono } from 'hono';
 import { serve } from '@hono/node-server';
 import { serveStatic } from '@hono/node-server/serve-static';
-import { apiApp } from './lib/api';
-import { catalogService } from './lib/sync-service';
+import { apiApp } from './lib/api.js';
+import { catalogService } from './lib/sync-service.js';
 
 const app = new Hono();
 app.route('/', apiApp);

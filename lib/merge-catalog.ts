@@ -1,4 +1,4 @@
-import { cleanText, isAIRecord } from './metadata';
+import { cleanText, isAIRecord } from './metadata.js';
 import type { Book, Catalog } from './types';
 
 export function bookIdentity(book: Pick<Book, 'title' | 'author'>): string {
